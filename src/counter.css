@@ -1,0 +1,346 @@
+.counter {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.counter__title h2 {
+  color: #2c5530;
+  font-size: 53px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-style: bald;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 50px;
+}
+
+.timer__item {
+  background: linear-gradient(145deg, #2c5530, #4a7c59);
+  color: white;
+  padding: 25px 15px;
+  border-radius: 15px;
+  min-width: 120px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  border: 3px solid #d4af37;
+}
+
+.timer__item:hover {
+  transform: translateY(-5px);
+}
+
+.timer__label {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 8px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.separator {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c5530;
+  margin-bottom: 20px;
+}
+
+/* Контейнер для изображения ёлки */
+.tree-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.christmas-tree-image {
+  max-width: 300px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.christmas-tree-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Анимация плавающего эффекта для изображения */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Стили для анимации завершения */
+.completion-animation {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a472a 0%, #2c5530 100%);
+  overflow: hidden;
+}
+
+.celebration-text {
+  text-align: center;
+  color: white;
+  z-index: 10;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.celebration-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: bounce 2s infinite;
+}
+
+.celebration-text p {
+  font-size: 24px;
+  opacity: 0.9;
+  animation: pulse 2s infinite;
+}
+
+/* Анимация конфетти */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: #ff0000;
+  top: 0;
+  opacity: 0;
+}
+
+.confetti:nth-child(1) {
+  left: 10%;
+  animation: confetti 5s ease-in 0s infinite;
+  background: #ff0000;
+}
+
+.confetti:nth-child(2) {
+  left: 20%;
+  animation: confetti 5s ease-in 1s infinite;
+  background: #00ff00;
+}
+
+.confetti:nth-child(3) {
+  left: 30%;
+  animation: confetti 5s ease-in 2s infinite;
+  background: #0000ff;
+}
+
+.confetti:nth-child(4) {
+  left: 40%;
+  animation: confetti 5s ease-in 3s infinite;
+  background: #ffff00;
+}
+
+.confetti:nth-child(5) {
+  left: 50%;
+  animation: confetti 5s ease-in 4s infinite;
+  background: #ff00ff;
+}
+
+.confetti:nth-child(6) {
+  left: 60%;
+  animation: confetti 5s ease-in 0.5s infinite;
+  background: #00ffff;
+}
+
+.confetti:nth-child(7) {
+  left: 70%;
+  animation: confetti 5s ease-in 1.5s infinite;
+  background: #ffa500;
+}
+
+.confetti:nth-child(8) {
+  left: 80%;
+  animation: confetti 5s ease-in 2.5s infinite;
+  background: #800080;
+}
+
+.confetti:nth-child(9) {
+  left: 90%;
+  animation: confetti 5s ease-in 3.5s infinite;
+  background: #ff69b4;
+}
+
+.confetti:nth-child(10) {
+  left: 95%;
+  animation: confetti 5s ease-in 4.5s infinite;
+  background: #4b0082;
+}
+
+/* Анимация фейерверков */
+.fireworks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.firework {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.firework:nth-child(1) {
+  left: 25%;
+  top: 30%;
+  animation: firework 3s ease-in 0s infinite;
+}
+
+.firework:nth-child(2) {
+  left: 75%;
+  top: 40%;
+  animation: firework 3s ease-in 1s infinite;
+}
+
+.firework:nth-child(3) {
+  left: 50%;
+  top: 20%;
+  animation: firework 3s ease-in 2s infinite;
+}
+
+/* Keyframe анимации */
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes firework {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty));
+    opacity: 0;
+  }
+}
+
+.firework:nth-child(1) {
+  --tx: 50px;
+  --ty: -100px;
+}
+
+.firework:nth-child(2) {
+  --tx: -30px;
+  --ty: -120px;
+}
+
+.firework:nth-child(3) {
+  --tx: 0px;
+  --ty: -150px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .timer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .timer__item {
+    min-width: 40px;
+    padding: 20px 10px;
+    font-size: 24px;
+  }
+  
+  .separator {
+    font-size: 18px;
+  }
+  
+  .counter__title h2 {
+    font-size: 24px;
+  }
+  
+  .celebration-text h1 {
+    font-size: 36px;
+  }
+  
+  .celebration-text p {
+    font-size: 18px;
+  }
+  
+  .christmas-tree-image {
+    max-width: 250px;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer__item {
+    min-width: 30px;
+    padding: 15px 8px;
+    font-size: 20px;
+  }
+  
+  .timer__label {
+    font-size: 12px;
+  }
+  
+  .christmas-tree-image {
+    max-width: 200px;
+    max-height: 300px;
+  }
+}
