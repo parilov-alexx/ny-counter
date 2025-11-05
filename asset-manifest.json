@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f35bc02.css",
-    "main.js": "/static/js/main.de36be69.js",
-    "static/media/christmas-tree.png": "/static/media/christmas-tree.5ddd668264a2be694049.png",
-    "index.html": "/index.html",
-    "main.9f35bc02.css.map": "/static/css/main.9f35bc02.css.map",
-    "main.de36be69.js.map": "/static/js/main.de36be69.js.map"
+    "main.css": "/ny-counter/static/css/main.9f35bc02.css",
+    "main.js": "/ny-counter/static/js/main.e20ea31c.js",
+    "static/media/christmas-tree.png": "/ny-counter/static/media/christmas-tree.5ddd668264a2be694049.png",
+    "index.html": "/ny-counter/index.html",
+    "main.9f35bc02.css.map": "/ny-counter/static/css/main.9f35bc02.css.map",
+    "main.e20ea31c.js.map": "/ny-counter/static/js/main.e20ea31c.js.map"
   },
   "entrypoints": [
     "static/css/main.9f35bc02.css",
-    "static/js/main.de36be69.js"
+    "static/js/main.e20ea31c.js"
   ]
 }
