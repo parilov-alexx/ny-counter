@@ -15,7 +15,7 @@ const Counter = () => {
   const [isCompleted, setIsCompleted] = useState(false);
 
   // Задаем целевую дату и время здесь 
-  const targetDate = '2026-01-01T00:00:00'; // Формат: YYYY-MM-DDTHH:mm:ss
+  const targetDate = '2027-01-01T00:00:00'; // Формат: YYYY-MM-DDTHH:mm:ss
 
   // Функция для вычисления оставшегося времени
   const calculateTimeLeft = () => {
